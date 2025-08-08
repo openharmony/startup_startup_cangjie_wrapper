@@ -45,7 +45,7 @@ The startup subsystem is responsible for starting key system processes and servi
 
 
 ```
-base/startup/startup_cangjie_api
+base/startup/startup_cangjie_wrapper
 ├── ohos         # 仓颉启动恢复子系统接口实现
 ```
 
@@ -53,4 +53,4 @@ base/startup/startup_cangjie_api
 
 **Startup**
 
-startup_cangjie_api
+startup_cangjie_wrapper

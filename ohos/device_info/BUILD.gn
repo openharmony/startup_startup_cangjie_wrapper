@@ -21,10 +21,10 @@ ohos_cj_library("ohos.device_info") {
   external_deps = [ "init:cj_device_info_ffi" ]
 
   cj_external_deps = [
-    "cangjie_api:ohos.labels",
+    "cangjie_ark_interop:ohos.labels",
   ]
 
   subsystem_name = "startup"
-  part_name = "startup_cangjie_api"
+  part_name = "startup_cangjie_wrapper"
   lib_name = "device_info"
 }

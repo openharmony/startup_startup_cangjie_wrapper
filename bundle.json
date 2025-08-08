@@ -1,16 +1,16 @@
 {
-    "name": "@ohos/startup_cangjie_api",
+    "name": "@ohos/startup_cangjie_wrapper",
     "description": "Provides the application with cangjie interfaces for startup",
     "version": "6.0",
     "license": "Apache-2.0",
     "publishAs": "code-segment",
     "segment": {
-        "destPath": "base/startup/startup_cangjie_api"
+        "destPath": "base/startup/startup_cangjie_wrapper"
     },
     "dirs": {},
     "scripts": {},
     "component": {
-        "name": "startup_cangjie_api",
+        "name": "startup_cangjie_wrapper",
         "subsystem": "startup",
         "syscap": [
             "SystemCapability.Startup.SystemInfo"
@@ -24,16 +24,16 @@
         "ram": "100000KB",
         "deps": {
             "components": [
-                "cangjie_api"
+                "cangjie_ark_interop"
             ]
         },
         "build": {
             "sub_component": [
-                "//base/startup/startup_cangjie_api/ohos/device_info:ohos.device_info"
+                "//base/startup/startup_cangjie_wrapper/ohos/device_info:ohos.device_info"
             ],
             "inner_kits": [
                 {
-                    "name": "//base/startup/startup_cangjie_api/ohos/device_info:ohos.device_info"
+                    "name": "//base/startup/startup_cangjie_wrapper/ohos/device_info:ohos.device_info"
                 }
             ],
             "test": [

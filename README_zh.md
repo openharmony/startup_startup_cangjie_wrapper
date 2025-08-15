@@ -1,9 +1,9 @@
-# 启动恢复子系统
+# 启动恢复仓颉接口
 
 
 ## 简介
 
-启动恢复负责在内核启动之后到应用启动之前的系统关键进程和服务的启动过程的功能。涉及以下组件：
+启动恢复仓颉接口是在 OpenHarmony 上基于启动恢复子系统能力之上封装的仓颉API。启动恢复负责在内核启动之后到应用启动之前的系统关键进程和服务的启动过程的功能。涉及以下组件：
 
 -   init组件
 
@@ -91,4 +91,4 @@ base/startup/startup_cangjie_wrapper
 
 **启动恢复子系统**
 
-startup_cangjie_wrapper
+[startup_init](https://gitee.com/openharmony/startup_init/blob/master/README_zh.md)

@@ -1,9 +1,9 @@
-# Startup
+# startup_startup_cangjie_wrapper
 
 
 ## Introduction
 
-The startup subsystem is responsible for starting key system processes and services after the kernel is started and before applications are started. The subsystem consists of the following modules:
+The startup_startup_cangjie_wrapper is a Cangjie API encapsulated on OpenHarmony based on the capabilities of the startup subsystem. The startup subsystem is responsible for starting key system processes and services after the kernel is started and before applications are started. The subsystem consists of the following modules:
 
 -   init
 
@@ -33,6 +33,10 @@ The startup subsystem is responsible for starting key system processes and servi
 
 ## Directory Structure
 
+**Figure 1** startup_cangjie_wrapper architecture
+
+![](figures/startup_cangjie_wrapper_architecture_en.png "startup_cangjie_wrapper architecture")
+
 **Table  1**  Directory structure of the source code for the startup subsystem
 
 | Directory                      | Description                                                  | Applicable Platform                                 |
@@ -46,11 +50,9 @@ The startup subsystem is responsible for starting key system processes and servi
 
 ```
 base/startup/startup_cangjie_wrapper
-├── ohos         # 仓颉启动恢复子系统接口实现
+├── ohos         # cangjie startup code
 ```
 
 ## Repositories Involved
 
-**Startup**
-
-startup_cangjie_wrapper
+[startup_init](https://gitee.com/openharmony/startup_init/blob/master/README_zh.md)

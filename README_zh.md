@@ -94,6 +94,4 @@ base/startup/startup_cangjie_wrapper
 
 ## 相关仓
 
-**启动恢复子系统**
-
 [startup_init](https://gitee.com/openharmony/startup_init/blob/master/README_zh.md)

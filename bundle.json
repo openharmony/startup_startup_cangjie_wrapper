@@ -24,7 +24,8 @@
         "ram": "116KB",
         "deps": {
             "components": [
-                "cangjie_ark_interop"
+                "cangjie_ark_interop",
+                "init"
             ]
         },
         "build": {

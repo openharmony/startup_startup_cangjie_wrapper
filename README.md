@@ -18,7 +18,7 @@ base/startup/startup_cangjie_wrapper
 └── ohos         # Cangjie Startup code
 ```
 
-## Constaints
+## Constraints
 
 Currently, the startup_startup_cangjie_wrapper's apis apply only to small-system devices(reference memory ≥ 1MB), for example, Hi3516DV300、Hi3518EV300 and RK3568.
 

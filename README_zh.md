@@ -2,7 +2,7 @@
 
 ## 简介
 
-启动恢复仓颉接口是在 OpenHarmony 上基于启动恢复子系统能力之上封装的仓颉API。启动恢复负责在内核启动之后到应用启动之前的系统关键进程和服务的启动过程的功能。
+启动恢复仓颉接口是在 OpenHarmony 上基于启动恢复子系统能力之上封装的仓颉API。启动恢复负责在内核启动之后到应用启动之前系统关键进程和服务的启动过程。当前开放的启动恢复仓颉接口仅支持standard设备。
 
 ## 系统架构
 
@@ -10,21 +10,24 @@
 
 ![启动恢复仓颉架构图](figures/startup_cangjie_wrapper_architecture_zh.png "启动恢复仓颉架构图")
 
+如架构图所示，当前启动恢复仓颉接口提供设备信息服务。
+
+- 设备信息主要包括OHOS固定值参数、厂商固定值参数以及厂商动态参数。
+
 ## 目录
 
 ```cangjie
 base/startup/startup_cangjie_wrapper
-├── figures      # 存放readme中的架构图
+├── figures      # 存放README中的架构图
 └── ohos         # 仓颉启动恢复子系统接口实现
+    └── device_info
 ```
-
-## 约束
-
-当前开放的启动恢复仓颉接口仅支持小型系统设备（参考内存≥1MB），标准系统Hi3516DV300、Hi3518EV300以及RK3568等。
 
 ## 使用说明
 
-如架构图所示，当前启动恢复仓颉接口仅提供设备信息服务。
+当前启动恢复仓颉接口提供一下能力：
+
+- 提供查询设备信息服务。
 
 启动恢复相关API请参见[ohos.device_info（设备信息）](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/BasicServicesKit/cj-apis-device_info.md)。
 

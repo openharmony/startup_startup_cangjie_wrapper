@@ -13,21 +13,22 @@ The startup_startup_cangjie_wrapper is a Cangjie API encapsulated on OpenHarmony
 As shown in the architecture pictures, startup provides DeviceInfo:
 
 - DeviceInfo mainly includes OHOS fixed-value parameters, manufacturer fixed-value parameters, and manufacturer dynamic parameters.
+- Cangjie Startup FFI Interface Definition： Responsible for defining the C-interoperable Cangjie interface, which is used to realize Cangjie's startup capabilities.
+- INIT：Responsible for providing the device information SA service, and encapsulating the C interface for interoperation with Cangjie.
 
 ## Directory Structure
 
-```cangjie
+```
 base/startup/startup_cangjie_wrapper
 ├── figures      # architecture pictures
 └── ohos         # Cangjie Startup code
-    └── device_info
+│   └── device_info
+└── test         # Cangjie Startup test cases
 ```
 
 ## Usage
 
-The following features are provided:
-
-- query deviceinfo.
+The following features provides the capability to query deviceinfo.
 
 For relevant API of startup, please refer to [ohos.device_info (Device Information)](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/BasicServicesKit/cj-apis-device_info.md).
 

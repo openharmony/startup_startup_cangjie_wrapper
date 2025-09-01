@@ -2,7 +2,7 @@
     "name": "@ohos/startup_cangjie_wrapper",
     "description": "startup_cangjie_wrapper is responsible for starting key system processes and services after the kernel is started and before applications are started",
     "version": "6.0",
-    "license": "Apache-2.0",
+    "license": "Apache License 2.0",
     "publishAs": "code-segment",
     "segment": {
         "destPath": "base/startup/startup_cangjie_wrapper"

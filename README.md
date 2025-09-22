@@ -13,9 +13,8 @@ The startup_startup_cangjie_wrapper is a Cangjie API encapsulated on OpenHarmony
 As shown in the architecture diagram, the current startup Cangjie API provides device information services:
 
 - DeviceInfo: Mainly includes OHOS fixed-value parameters, manufacturer fixed-value parameters, and manufacturer dynamic parameters.
-- Cangjie Startup FFI Interface Definition: Responsible for defining C language interoperation Cangjie interfaces, used to implement Cangjie startup capabilities.
+- Cangjie Startup FFI Interface Definition: Responsible for defining C interoperation Cangjie interfaces, used to implement Cangjie startup capabilities.
 - init: Responsible for providing device information SA services, encapsulating C interfaces for interoperation with Cangjie.
-- ark_interop: Provides APILevel and BusinessException.
 
 ## Directory Structure
 
@@ -25,6 +24,8 @@ base/startup/startup_cangjie_wrapper
 └── ohos            # Cangjie startup subsystem interface implementation
 │   └── device_info # DeviceInfo module implementation
 └── test            # Cangjie startup subsystem test cases
+    └── APILevel22
+      └── device_info # DeviceInfo test cases
 ```
 
 ## Usage
@@ -40,4 +41,5 @@ Developers are welcome to contribute code, documentation, etc. For specific cont
 ## Repositories Involved
 
 [arkcompiler_cangjie_ark_interop](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop)
+
 [startup_init](https://gitcode.com/openharmony/startup_init)

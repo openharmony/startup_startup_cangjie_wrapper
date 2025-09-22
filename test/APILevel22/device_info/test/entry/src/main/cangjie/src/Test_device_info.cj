@@ -26,7 +26,7 @@ import ohos.base.*
 @Test
 class Test_device_info {
     @TestCase
-    @Tag[APILevel12, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_deviceInfo_00(): Unit {
         let deviceType = DeviceInfo.deviceType
         let manufacture = DeviceInfo.manufacture
@@ -101,7 +101,7 @@ class Test_device_info {
     }
 
     @TestCase
-    @Tag[APILevel20, TestLevel0]
+    @Tag[APILevel22, TestLevel0]
     func test_deviceInfo_01(): Unit {
         let deviceInfo = DeviceInfo()
         let oDID = DeviceInfo.ODID

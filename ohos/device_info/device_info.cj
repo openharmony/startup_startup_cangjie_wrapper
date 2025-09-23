@@ -97,7 +97,7 @@ foreign {
 *  @relation declare namespace deviceInfo
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.Startup.SystemInfo"
 ]
 public class DeviceInfo {
@@ -107,7 +107,7 @@ public class DeviceInfo {
     *  @relation const hardwareProfile: string
     */
     @!APILevel[
-        22,
+        since: "22",
         deprecated: 9,
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
@@ -127,7 +127,7 @@ public class DeviceInfo {
     *  @relation const deviceType: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop deviceType: String {
@@ -144,7 +144,7 @@ public class DeviceInfo {
     *  @relation const osFullName: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop osFullName: String {
@@ -161,7 +161,7 @@ public class DeviceInfo {
     *  @relation const productModel: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop productModel: String {
@@ -178,7 +178,7 @@ public class DeviceInfo {
     *  @relation const brand: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop brand: String {
@@ -195,7 +195,7 @@ public class DeviceInfo {
     *  @relation const udid: string
     */
     @!APILevel[
-        22,
+        since: "22",
         permission: "ohos.permission.sec.ACCESS_UDID",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
@@ -214,7 +214,7 @@ public class DeviceInfo {
     *  @relation const buildRootHash: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildRootHash: String {
@@ -231,7 +231,7 @@ public class DeviceInfo {
     *  @relation const buildTime: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildTime: String {
@@ -248,7 +248,7 @@ public class DeviceInfo {
     *  @relation const buildHost: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildHost: String {
@@ -265,7 +265,7 @@ public class DeviceInfo {
     *  @relation const buildUser: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildUser: String {
@@ -282,7 +282,7 @@ public class DeviceInfo {
     *  @relation const buildType: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildType: String {
@@ -299,7 +299,7 @@ public class DeviceInfo {
     *  @relation const versionId: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop versionId: String {
@@ -316,7 +316,7 @@ public class DeviceInfo {
     *  @relation const firstApiVersion: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop firstApiVersion: Int32 {
@@ -332,7 +332,7 @@ public class DeviceInfo {
     *  @relation const sdkApiVersion: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop sdkApiVersion: Int32 {
@@ -349,7 +349,7 @@ public class DeviceInfo {
     *  @relation const buildVersion: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildVersion: Int32 {
@@ -366,7 +366,7 @@ public class DeviceInfo {
     *  @relation const featureVersion: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop featureVersion: Int32 {
@@ -384,7 +384,7 @@ public class DeviceInfo {
     *  @relation const seniorVersion: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop seniorVersion: Int32 {
@@ -401,7 +401,7 @@ public class DeviceInfo {
     *  @relation const majorVersion: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop majorVersion: Int32 {
@@ -417,7 +417,7 @@ public class DeviceInfo {
     *  @relation const displayVersion: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop displayVersion: String {
@@ -434,7 +434,7 @@ public class DeviceInfo {
     *  @relation const serial: string
     */
     @!APILevel[
-        22,
+        since: "22",
         permission: "ohos.permission.sec.ACCESS_UDID",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
@@ -454,7 +454,7 @@ public class DeviceInfo {
     *  @relation const osReleaseType: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop osReleaseType: String {
@@ -471,7 +471,7 @@ public class DeviceInfo {
     *  @relation const incrementalVersion: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop incrementalVersion: String {
@@ -488,7 +488,7 @@ public class DeviceInfo {
     *  @relation const securityPatchTag: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop securityPatchTag: String {
@@ -505,7 +505,7 @@ public class DeviceInfo {
     *  @relation const abiList: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop abiList: String {
@@ -522,7 +522,7 @@ public class DeviceInfo {
     *  @relation const bootloaderVersion: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop bootloaderVersion: String {
@@ -539,7 +539,7 @@ public class DeviceInfo {
     *  @relation const hardwareModel: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop hardwareModel: String {
@@ -556,7 +556,7 @@ public class DeviceInfo {
     *  @relation const softwareModel: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop softwareModel: String {
@@ -573,7 +573,7 @@ public class DeviceInfo {
     *  @relation const productSeries: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop productSeries: String {
@@ -590,7 +590,7 @@ public class DeviceInfo {
     *  @relation const marketName: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop marketName: String {
@@ -607,7 +607,7 @@ public class DeviceInfo {
     *  @relation const manufacture: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop manufacture: String {
@@ -627,7 +627,7 @@ public class DeviceInfo {
     *  @relation const distributionOSName: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSName: String {
@@ -647,7 +647,7 @@ public class DeviceInfo {
     *  @relation const distributionOSVersion: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSVersion: String {
@@ -667,7 +667,7 @@ public class DeviceInfo {
     *  @relation const distributionOSApiVersion: number
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSApiVersion: Int32 {
@@ -686,7 +686,7 @@ public class DeviceInfo {
     *  @relation const distributionOSReleaseType: string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSReleaseType: String {
@@ -715,7 +715,7 @@ public class DeviceInfo {
      * @relation const ODID: string
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop ODID: String {
@@ -734,7 +734,7 @@ public class DeviceInfo {
      * @relation const distributionOSApiName: string
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSApiName: String {

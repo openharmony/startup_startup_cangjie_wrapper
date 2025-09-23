@@ -15,6 +15,7 @@ As shown in the architecture diagram, the current startup Cangjie API provides d
 - DeviceInfo: Mainly includes OHOS fixed-value parameters, manufacturer fixed-value parameters, and manufacturer dynamic parameters.
 - Cangjie Startup FFI Interface Definition: Responsible for defining C interoperation Cangjie interfaces, used to implement Cangjie startup capabilities.
 - init: Responsible for providing device information SA services, encapsulating C interfaces for interoperation with Cangjie.
+- cangjie_ark_interop: Provides Cangjie annotation definitions for API annotation and BusinessException exception class definition for user-facing exceptions.
 
 ## Directory Structure
 
@@ -24,8 +25,7 @@ base/startup/startup_cangjie_wrapper
 └── ohos            # Cangjie startup subsystem interface implementation
 │   └── device_info # DeviceInfo module implementation
 └── test            # Cangjie startup subsystem test cases
-    └── APILevel22
-      └── device_info # DeviceInfo test cases
+    └── device_info # DeviceInfo test cases
 ```
 
 ## Usage

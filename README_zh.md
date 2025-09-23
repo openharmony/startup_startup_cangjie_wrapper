@@ -15,6 +15,7 @@
 - 设备信息：主要包括OHOS固定值参数、厂商固定值参数以及厂商动态参数。
 - 仓颉启动恢复FFI接口定义：负责定义C语言互操作仓颉接口，用于实现仓颉启动恢复能力。
 - 启动引导部件：负责提供设备信息SA服务，封装C语言接口提供给仓颉进行互操作。
+- cangjie_ark_interop：负责提供仓颉注解定义，用于对API进行标注，以及提供抛向用户的BusinessException异常类定义。
 
 ## 目录
 
@@ -24,8 +25,7 @@ base/startup/startup_cangjie_wrapper
 └── ohos            # 仓颉启动恢复子系统接口实现
 │   └── device_info # 设备信息模块实现
 └── test            # 测试用例
-    └── APILevel22
-      └── device_info # 设备信息测试用例
+    └── device_info # 设备信息测试用例
 ```
 
 ## 使用说明

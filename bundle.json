@@ -1,6 +1,6 @@
 {
     "name": "@ohos/startup_cangjie_wrapper",
-    "description": "startup_cangjie_wrapper is responsible for starting key system processes and services after the kernel is started and before applications are started",
+    "description": "The startup_startup_cangjie_wrapper provides device information query services for developers on OpenHarmony.",
     "version": "6.0",
     "license": "Apache License 2.0",
     "publishAs": "code-segment",

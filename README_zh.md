@@ -6,22 +6,22 @@
 
 ## 系统架构
 
-**图 1** 启动恢复仓颉架构图
+**图 1** 启动恢复仓颉封装架构图
 
-![启动恢复仓颉架构图](figures/startup_cangjie_wrapper_architecture_zh.png)
+![启动恢复仓颉封装架构图](figures/startup_cangjie_wrapper_architecture_zh.png)
 
-如架构图所示，当前启动恢复仓颉封装提供设备信息服务:
+如架构图所示:
 
 接口层：
 
-- 设备信息：面向开发者提供设备信息查询能力，设备信息主要包括OHOS固定值参数、厂商固定值参数以及厂商动态参数。
+- 设备信息：面向开发者提供设备信息查询能力，设备信息主要包括设备类型信息、设备生产厂家信息、系统软件API版本信息以及设备udid信息等。
 
 框架层：
 
-- 设备信息功能封装：基于底层启动子系统提供的设备信息SA服务，实现设备类型信息、设备生产厂家信息、系统软件API版本信息以及设备udid信息等的查询能力。
+- 设备信息功能封装：基于底层init组件提供的设备信息SA服务，实现设备信息的查询能力。
 
 架构图中依赖部件引入说明：
-- 启动子系统：依赖启动子系统提供设备信息SA服务，用于设备信息的查询。
+- init组件：依赖init组件提供设备信息SA服务，用于框架层能力的实现。
 - cangjie_ark_interop：依赖cangjie_ark_interop提供的仓颉注解类定义和BusinessException异常类定义，用于对API进行标注，及在错误分支向用户抛出异常。
 
 
@@ -40,7 +40,7 @@ base/startup/startup_cangjie_wrapper
 
 当前启动恢复仓颉封装提供以下能力：
 
-- 获取设备信息。
+- 设备信息。
 
 启动恢复相关接口请参见[设备信息API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/BasicServicesKit/cj-apis-device_info.md)。
 

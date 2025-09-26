@@ -1,8 +1,8 @@
-# 启动恢复仓颉接口
+# 启动恢复仓颉封装
 
 ## 简介
 
-启动恢复仓颉接口是在OpenHarmony上基于启动恢复子系统能力之上封装的仓颉API。启动恢复主要负责在内核启动之后到应用启动之前系统关键进程和服务的启动过程。当前开放的启动恢复仓颉接口仅支持standard设备。
+启动恢复仓颉封装是在OpenHarmony上面向开发者使用仓颉语言进行应用开发时提供的设备信息查询服务。当前开放的启动恢复仓颉封装仅支持standard设备。
 
 ## 系统架构
 
@@ -10,12 +10,20 @@
 
 ![启动恢复仓颉架构图](figures/startup_cangjie_wrapper_architecture_zh.png)
 
-如架构图所示，当前启动恢复仓颉接口提供设备信息服务:
+如架构图所示，当前启动恢复仓颉封装提供设备信息服务:
 
-- 设备信息：主要包括OHOS固定值参数、厂商固定值参数以及厂商动态参数。
-- 仓颉启动恢复FFI接口定义：负责定义C语言互操作仓颉接口，用于实现仓颉启动恢复能力。
-- 启动引导部件：负责提供设备信息SA服务，封装C语言接口提供给仓颉进行互操作。
-- cangjie_ark_interop：负责提供仓颉注解定义，用于对API进行标注，以及提供抛向用户的BusinessException异常类定义。
+接口层：
+
+- 设备信息：面向开发者提供设备信息查询能力，设备信息主要包括OHOS固定值参数、厂商固定值参数以及厂商动态参数。
+
+框架层：
+
+- 设备信息功能封装：基于底层启动子系统提供的设备信息SA服务，实现设备类型信息、设备生产厂家信息、系统软件API版本信息以及设备udid信息等的查询能力。
+
+架构图中依赖部件引入说明：
+- 启动子系统：依赖启动子系统提供设备信息SA服务，用于设备信息的查询。
+- cangjie_ark_interop：依赖cangjie_ark_interop提供的仓颉注解类定义和BusinessException异常类定义，用于对API进行标注，及在错误分支向用户抛出异常。
+
 
 ## 目录
 
@@ -30,11 +38,15 @@ base/startup/startup_cangjie_wrapper
 
 ## 使用说明
 
-当前启动恢复仓颉接口提供以下能力：
+当前启动恢复仓颉封装提供以下能力：
 
 - 获取设备信息。
 
 启动恢复相关接口请参见[设备信息API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/BasicServicesKit/cj-apis-device_info.md)。
+
+## 约束
+
+获取设备序列号信息，需要ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业定制应用申请)。
 
 ## 参与贡献
 

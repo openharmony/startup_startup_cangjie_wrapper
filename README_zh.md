@@ -21,8 +21,8 @@
 - 设备信息功能封装：基于底层init组件提供的设备信息SA服务，实现设备信息的查询能力。
 
 架构图中依赖部件引入说明：
-- init组件：依赖init组件提供设备信息SA服务，用于框架层能力的实现。
-- cangjie_ark_interop：依赖cangjie_ark_interop提供的仓颉注解类定义和BusinessException异常类定义，用于对API进行标注，及在错误分支向用户抛出异常。
+- init组件：设备信息功能封装的实现依赖init组件提供设备信息SA服务。
+- cangjie_ark_interop：设备信息功能封装依赖cangjie_ark_interop提供的仓颉注解类定义和BusinessException异常类定义，用于对API进行标注，及在错误分支向用户抛出异常。
 
 
 ## 目录
@@ -42,11 +42,11 @@ base/startup/startup_cangjie_wrapper
 
 - 设备信息。
 
-启动恢复相关接口请参见[设备信息API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/BasicServicesKit/cj-apis-device_info.md)。
+启动恢复相关接口请参见[设备信息API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/BasicServicesKit/cj-apis-device_info.md)，相关开发指导请参见[设备信息开发指南](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/Dev_Guide/source_zh_cn/basic-services/device-info\cj-device-info-development-guide.md)。
 
 ## 约束
 
-获取设备序列号信息，需要ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业定制应用申请)。
+获取设备序列号信息和设备udid，需要ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业定制应用申请)。
 
 ## 参与贡献
 

@@ -19,8 +19,8 @@ Framework Layer：
 - DeviceInfo Wrapper: Implements device information query capabilities based on the device information SA service provided by the underlying init component.
 
 Dependency Components Introduction in Architecture:
-- init: Depends on the device information SA service provided by the init component for framework layer capability implementation.
-- cangjie_ark_interop: Depends on APILevel class definitions and BusinessException class definitions for API annotation and throwing exceptions to users in error branches.
+- init: DeviceInfo Wrapper depends on the device information SA service provided by the init component for framework layer capability implementation.
+- cangjie_ark_interop: DeviceInfo Wrapper depends on APILevel class definitions and BusinessException class definitions for API annotation and throwing exceptions to users in error branches.
 
 ## Directory Structure
 
@@ -43,7 +43,7 @@ For startup related APIs, please refer to [ohos.device_info (Device Information)
 
 ## Constraints
 
-To obtain device serial number information, the ohos.permission.sec.ACCESS_UDID permission is required (this permission can only be requested by system applications and enterprise customized applications).
+To obtain device serial number information or udid information, the ohos.permission.sec.ACCESS_UDID permission is required (this permission can only be requested by system applications and enterprise customized applications).
 
 ## Code Contribution
 

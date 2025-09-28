@@ -42,11 +42,17 @@ base/startup/startup_cangjie_wrapper
 
 - 设备信息。
 
-启动恢复相关接口请参见[设备信息API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/BasicServicesKit/cj-apis-device_info.md)，相关开发指导请参见[设备信息开发指南](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/Dev_Guide/source_zh_cn/basic-services/device-info\cj-device-info-development-guide.md)。
+启动恢复相关接口请参见[设备信息API文档](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_zh_cn/apis/BasicServicesKit/cj-apis-device_info.md)，相关开发指导请参见[设备信息开发指南](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/Dev_Guide/source_zh_cn/basic-services/device-info/cj-device-info-development-guide.md)。
 
 ## 约束
 
-获取设备序列号信息和设备udid，需要ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业定制应用申请)。
+- 获取设备序列号信息和设备udid，需要ohos.permission.sec.ACCESS_UDID(该权限只允许系统应用及企业定制应用申请)。
+
+与ArkTS提供的API能力相比，有以下差异：
+
+  - 暂不支持获取认证型号别名。
+  - 暂不支持获取硬盘序列号。
+  - 暂不支持获取设备能力等级。
 
 ## 参与贡献
 

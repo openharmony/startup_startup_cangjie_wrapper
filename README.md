@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The startup_startup_cangjie_wrapper is a Cangjie API encapsulated on OpenHarmony based on the capabilities of the startup subsystem. The startup subsystem is mainly responsible for the startup process of key system processes and services after the kernel is started and before the application is started. The currently open startup Cangjie API only supports standard devices.
+The startup_startup_cangjie_wrapper provides device information query services for developers using the Cangjie language for application development on OpenHarmony. The currently open startup_startup_cangjie_wrapper only supports standard devices.
 
 ## System Architecture
 
@@ -10,11 +10,17 @@ The startup_startup_cangjie_wrapper is a Cangjie API encapsulated on OpenHarmony
 
 ![startup_cangjie_wrapper architecture](figures/startup_cangjie_wrapper_architecture_en.png)
 
-As shown in the architecture diagram, the current startup Cangjie API provides device information services:
+As shown in the architecture diagram, the current startup_startup_cangjie_wrapper provides device information services:
 
-- DeviceInfo: Mainly includes OHOS fixed-value parameters, manufacturer fixed-value parameters, and manufacturer dynamic parameters.
-- Cangjie Startup FFI Interface Definition: Responsible for defining C interoperation Cangjie interfaces, used to implement Cangjie startup capabilities.
-- init: Responsible for providing device information SA services, encapsulating C interfaces for interoperation with Cangjie.
+Interface Layer：
+- DeviceInfo: Provides device information query capabilities for developers. Device information mainly includes device type information, device manufacturer information, system software API version information, and device UDID information.
+
+Framework Layer：
+- DeviceInfo Wrapper: Implements device information query capabilities based on the device information SA service provided by the underlying init component.
+
+Dependency Components Introduction in Architecture:
+- init: DeviceInfo Wrapper depends on the device information SA service provided by the init component for framework layer capability implementation.
+- cangjie_ark_interop: DeviceInfo Wrapper depends on APILevel class definitions and BusinessException class definitions for API annotation and throwing exceptions to users in error branches.
 
 ## Directory Structure
 
@@ -24,15 +30,20 @@ base/startup/startup_cangjie_wrapper
 └── ohos            # Cangjie startup subsystem interface implementation
 │   └── device_info # DeviceInfo module implementation
 └── test            # Cangjie startup subsystem test cases
-    └── APILevel22
-      └── device_info # DeviceInfo test cases
+    └── device_info # DeviceInfo test cases
 ```
 
 ## Usage
 
-The current startup Cangjie API mainly provides device information services.
+The current startup_startup_cangjie_wrapper mainly provides device information services.
+
+- DeviceInfo.
 
 For startup related APIs, please refer to [ohos.device_info (Device Information)](https://gitcode.com/openharmony-sig/arkcompiler_cangjie_ark_interop/blob/master/doc/API_Reference/source_en/apis/BasicServicesKit/cj-apis-device_info.md).
+
+## Constraints
+
+To obtain device serial number information or udid information, the ohos.permission.sec.ACCESS_UDID permission is required (this permission can only be requested by system applications and enterprise customized applications).
 
 ## Code Contribution
 

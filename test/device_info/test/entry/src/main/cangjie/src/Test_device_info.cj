@@ -15,8 +15,8 @@
 
 package ohos_app_cangjie_entry
 
-internal import BasicServicesKit.*
-internal import PerformanceAnalysisKit.*
+internal import kit.BasicServicesKit.*
+internal import kit.PerformanceAnalysisKit.*
 import std.unittest.testmacro.*
 import std.unittest.*
 import std.unittest.common.*

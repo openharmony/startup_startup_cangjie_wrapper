@@ -95,8 +95,6 @@ foreign {
 
 /**
 *  A static class pertaining to the product information.
-*
-*  @relation declare namespace deviceInfo
 */
 @!APILevel[
     22,
@@ -105,8 +103,6 @@ foreign {
 public class DeviceInfo {
     /**
     *  Obtains the hardware profile represented by a string.
-    *
-    *  @relation const hardwareProfile: string
     */
     @!APILevel[
         22,
@@ -125,8 +121,6 @@ public class DeviceInfo {
     * Obtains the device type represented by a string,
     * which can be phone (or default for phones), wearable, liteWearable,
     * tablet, tv, car, or smartVision.
-    *
-    *  @relation const deviceType: string
     */
     @!APILevel[
         22,
@@ -142,8 +136,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the OS version represented by a string.
-    *
-    *  @relation const osFullName: string
     */
     @!APILevel[
         22,
@@ -159,8 +151,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the product model represented by a string.
-    *
-    *  @relation const productModel: string
     */
     @!APILevel[
         22,
@@ -176,8 +166,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the device brand represented by a string.
-    *
-    *  @relation const brand: string
     */
     @!APILevel[
         22,
@@ -193,8 +181,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the device udid.
-    *
-    *  @relation const udid: string
     */
     @!APILevel[
         22,
@@ -212,8 +198,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the version hash.
-    *
-    *  @relation const buildRootHash: string
     */
     @!APILevel[
         22,
@@ -229,8 +213,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the build time.
-    *
-    *  @relation const buildTime: string
     */
     @!APILevel[
         22,
@@ -246,8 +228,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the different build host of the same baseline code.
-    *
-    *  @relation const buildHost: string
     */
     @!APILevel[
         22,
@@ -263,8 +243,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the different build user of the same baseline code.
-    *
-    *  @relation const buildUser: string
     */
     @!APILevel[
         22,
@@ -280,8 +258,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the build types of the same baseline code.
-    *
-    *  @relation const buildType: string
     */
     @!APILevel[
         22,
@@ -297,8 +273,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the version ID by a string.
-    *
-    *  @relation const versionId: string
     */
     @!APILevel[
         22,
@@ -314,8 +288,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the first API version number.
-    *
-    *  @relation const firstApiVersion: number
     */
     @!APILevel[
         22,
@@ -330,8 +302,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the SDK API version number.
-    *
-    *  @relation const sdkApiVersion: number
     */
     @!APILevel[
         22,
@@ -347,8 +317,6 @@ public class DeviceInfo {
     /**
     * Obtains the build (B) version number, which increases with each new development build.
     * The B version number monotonically increases from 0 or 1 to 999.
-    *
-    *  @relation const buildVersion: number
     */
     @!APILevel[
         22,
@@ -364,8 +332,6 @@ public class DeviceInfo {
     /**
     * Obtains the feature (F) version number, which increases with any planned new features.
     * The F version number monotonically increases from 0 or 1 to 99.
-    *
-    *  @relation const featureVersion: number
     */
     @!APILevel[
         22,
@@ -382,8 +348,6 @@ public class DeviceInfo {
     * Obtains the senior (S) version number, which increases with any updates to the partial
     * architecture or major features.
     * The S version number monotonically increases from 0 to 99.
-    *
-    *  @relation const seniorVersion: number
     */
     @!APILevel[
         22,
@@ -399,8 +363,6 @@ public class DeviceInfo {
     /**
     * Obtains the major (M) version number, which increases with any updates to the overall architecture.
     * The M version number monotonically increases from 1 to 99.
-    *
-    *  @relation const majorVersion: number
     */
     @!APILevel[
         22,
@@ -415,8 +377,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the product version represented by a string.
-    *
-    *  @relation const displayVersion: string
     */
     @!APILevel[
         22,
@@ -432,8 +392,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the device serial number represented by a string.
-    *
-    *  @relation const serial: string
     */
     @!APILevel[
         22,
@@ -452,8 +410,6 @@ public class DeviceInfo {
     * Obtains the OS release type represented by a string.
     * The OS release category can be Release, Beta, or Canary.
     * The specific release type may be Release, Beta1, or others alike.
-    *
-    *  @relation const osReleaseType: string
     */
     @!APILevel[
         22,
@@ -469,8 +425,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the incremental version represented by a string.
-    *
-    *  @relation const incrementalVersion: string
     */
     @!APILevel[
         22,
@@ -486,8 +440,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the security patch level represented by a string.
-    *
-    *  @relation const securityPatchTag: string
     */
     @!APILevel[
         22,
@@ -503,8 +455,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the application binary interface (Abi) list represented by a string.
-    *
-    *  @relation const abiList: string
     */
     @!APILevel[
         22,
@@ -520,8 +470,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the bootloader version number represented by a string.
-    *
-    *  @relation const bootloaderVersion: string
     */
     @!APILevel[
         22,
@@ -537,8 +485,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the hardware model represented by a string.
-    *
-    *  @relation const hardwareModel: string
     */
     @!APILevel[
         22,
@@ -554,8 +500,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the software model represented by a string.
-    *
-    *  @relation const softwareModel: string
     */
     @!APILevel[
         22,
@@ -571,8 +515,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the product series represented by a string.
-    *
-    *  @relation const productSeries: string
     */
     @!APILevel[
         22,
@@ -588,8 +530,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the external product series represented by a string.
-    *
-    *  @relation const marketName: string
     */
     @!APILevel[
         22,
@@ -605,8 +545,6 @@ public class DeviceInfo {
 
     /**
     * Obtains the device manufacturer represented by a string.
-    *
-    *  @relation const manufacture: string
     */
     @!APILevel[
         22,
@@ -625,8 +563,6 @@ public class DeviceInfo {
     * Independent Software Vendor (ISV) may distribute OHOS with their own OS name.
     * distributionOsName will return the ISV OS name
     * If ISV not specified, it will return an empty string
-    *
-    *  @relation const distributionOSName: string
     */
     @!APILevel[
         22,
@@ -645,8 +581,6 @@ public class DeviceInfo {
     * Independent Software Vendor (ISV) may distribute OHOS with their own OS version.
     * distributionOSVersion will return the ISV OS version
     * If ISV not specified, it will return the same value as osFullName
-    *
-    *  @relation const distributionOSVersion: string
     */
     @!APILevel[
         22,
@@ -665,8 +599,6 @@ public class DeviceInfo {
     * Independent Software Vendor (ISV) may distribute OHOS with their own OS api version.
     * distributionOSVersion will return the ISV OS api version
     * If ISV not specified, it will return the same value as sdkApiVersion
-    *
-    *  @relation const distributionOSApiVersion: number
     */
     @!APILevel[
         22,
@@ -684,8 +616,6 @@ public class DeviceInfo {
     * Independent Software Vendor (ISV) may distribute OHOS with their own OS release type.
     * distributionOSVersion will return the ISV OS release type
     * If ISV not specified, it will return the same value as osReleaseType
-    *
-    *  @relation const distributionOSReleaseType: string
     */
     @!APILevel[
         22,
@@ -713,8 +643,6 @@ public class DeviceInfo {
      * For apps from different developers, which are running on the same device, each of them has its own ODID.
      * For apps from the same developer, which are running on different devices, each of them has its own ODID.
      * For apps from different developers, which are running on different devices, each of them has its own ODID.
-     *
-     * @relation const ODID: string
      */
     @!APILevel[
         22,
@@ -732,8 +660,6 @@ public class DeviceInfo {
      * Obtains the Distribution OS api name.
      * Independent Software Vendor (ISV) may distribute OHOS with their own OS api name.
      * distributionOSApiName will return the ISV OS api name
-     *
-     * @relation const distributionOSApiName: string
      */
     @!APILevel[
         22,

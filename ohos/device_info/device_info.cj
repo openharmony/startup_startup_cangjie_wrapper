@@ -106,7 +106,6 @@ public class DeviceInfo {
     */
     @!APILevel[
         22,
-        deprecated: 9,
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop hardwareProfile: String {

@@ -97,7 +97,7 @@ foreign {
 *  A static class pertaining to the product information.
 */
 @!APILevel[
-    22,
+    since: "22",
     syscap: "SystemCapability.Startup.SystemInfo"
 ]
 public class DeviceInfo {
@@ -105,7 +105,7 @@ public class DeviceInfo {
     *  Obtains the hardware profile represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop hardwareProfile: String {
@@ -122,7 +122,7 @@ public class DeviceInfo {
     * tablet, tv, car, or smartVision.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop deviceType: String {
@@ -137,7 +137,7 @@ public class DeviceInfo {
     * Obtains the OS version represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop osFullName: String {
@@ -152,7 +152,7 @@ public class DeviceInfo {
     * Obtains the product model represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop productModel: String {
@@ -167,7 +167,7 @@ public class DeviceInfo {
     * Obtains the device brand represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop brand: String {
@@ -182,7 +182,7 @@ public class DeviceInfo {
     * Obtains the device udid.
     */
     @!APILevel[
-        22,
+        since: "22",
         permission: "ohos.permission.sec.ACCESS_UDID",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
@@ -199,7 +199,7 @@ public class DeviceInfo {
     * Obtains the version hash.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildRootHash: String {
@@ -214,7 +214,7 @@ public class DeviceInfo {
     * Obtains the build time.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildTime: String {
@@ -229,7 +229,7 @@ public class DeviceInfo {
     * Obtains the different build host of the same baseline code.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildHost: String {
@@ -244,7 +244,7 @@ public class DeviceInfo {
     * Obtains the different build user of the same baseline code.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildUser: String {
@@ -259,7 +259,7 @@ public class DeviceInfo {
     * Obtains the build types of the same baseline code.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildType: String {
@@ -274,7 +274,7 @@ public class DeviceInfo {
     * Obtains the version ID by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop versionId: String {
@@ -289,7 +289,7 @@ public class DeviceInfo {
     * Obtains the first API version number.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop firstApiVersion: Int32 {
@@ -303,7 +303,7 @@ public class DeviceInfo {
     * Obtains the SDK API version number.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop sdkApiVersion: Int32 {
@@ -318,7 +318,7 @@ public class DeviceInfo {
     * The B version number monotonically increases from 0 or 1 to 999.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop buildVersion: Int32 {
@@ -333,7 +333,7 @@ public class DeviceInfo {
     * The F version number monotonically increases from 0 or 1 to 99.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop featureVersion: Int32 {
@@ -349,7 +349,7 @@ public class DeviceInfo {
     * The S version number monotonically increases from 0 to 99.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop seniorVersion: Int32 {
@@ -364,7 +364,7 @@ public class DeviceInfo {
     * The M version number monotonically increases from 1 to 99.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop majorVersion: Int32 {
@@ -378,7 +378,7 @@ public class DeviceInfo {
     * Obtains the product version represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop displayVersion: String {
@@ -393,7 +393,7 @@ public class DeviceInfo {
     * Obtains the device serial number represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         permission: "ohos.permission.sec.ACCESS_UDID",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
@@ -411,7 +411,7 @@ public class DeviceInfo {
     * The specific release type may be Release, Beta1, or others alike.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop osReleaseType: String {
@@ -426,7 +426,7 @@ public class DeviceInfo {
     * Obtains the incremental version represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop incrementalVersion: String {
@@ -441,7 +441,7 @@ public class DeviceInfo {
     * Obtains the security patch level represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop securityPatchTag: String {
@@ -456,7 +456,7 @@ public class DeviceInfo {
     * Obtains the application binary interface (Abi) list represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop abiList: String {
@@ -471,7 +471,7 @@ public class DeviceInfo {
     * Obtains the bootloader version number represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop bootloaderVersion: String {
@@ -486,7 +486,7 @@ public class DeviceInfo {
     * Obtains the hardware model represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop hardwareModel: String {
@@ -501,7 +501,7 @@ public class DeviceInfo {
     * Obtains the software model represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop softwareModel: String {
@@ -516,7 +516,7 @@ public class DeviceInfo {
     * Obtains the product series represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop productSeries: String {
@@ -531,7 +531,7 @@ public class DeviceInfo {
     * Obtains the external product series represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop marketName: String {
@@ -546,7 +546,7 @@ public class DeviceInfo {
     * Obtains the device manufacturer represented by a string.
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop manufacture: String {
@@ -564,7 +564,7 @@ public class DeviceInfo {
     * If ISV not specified, it will return an empty string
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSName: String {
@@ -582,7 +582,7 @@ public class DeviceInfo {
     * If ISV not specified, it will return the same value as osFullName
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSVersion: String {
@@ -600,7 +600,7 @@ public class DeviceInfo {
     * If ISV not specified, it will return the same value as sdkApiVersion
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSApiVersion: Int32 {
@@ -617,7 +617,7 @@ public class DeviceInfo {
     * If ISV not specified, it will return the same value as osReleaseType
     */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSReleaseType: String {
@@ -644,7 +644,7 @@ public class DeviceInfo {
      * For apps from different developers, which are running on different devices, each of them has its own ODID.
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop ODID: String {
@@ -661,7 +661,7 @@ public class DeviceInfo {
      * distributionOSApiName will return the ISV OS api name
      */
     @!APILevel[
-        22,
+        since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSApiName: String {

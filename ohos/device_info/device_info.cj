@@ -17,7 +17,7 @@
 
 package ohos.device_info
 
-import ohos.labels.APILevel
+import ohos.labels.{APILevel, Hide}
 
 foreign {
     func FfiOHOSDeviceInfoGetHardwareProfile(): CString

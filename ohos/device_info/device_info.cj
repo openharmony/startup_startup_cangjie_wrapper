@@ -102,10 +102,9 @@ foreign {
 ]
 public class DeviceInfo {
     /**
-     * Obtains the device type represented by a string,
-     * which can be phone (or default for phones), wearable, liteWearable,
-     * tablet, tv, car, or smartVision.
-     */
+      * Obtains the device type represented by a string, which can be phone (or default for phones), wearable,
+      * liteWearable, tablet, tv, car, or smartVision.
+      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.Startup.SystemInfo"
@@ -234,7 +233,7 @@ public class DeviceInfo {
     }
 
     /**
-     *  Obtains the hardware profile represented by a string.
+     * Obtains the hardware profile represented by a string.
      */
     @!APILevel[
         since: "22",
@@ -659,11 +658,11 @@ public class DeviceInfo {
      * Open Device Identifier (ODID): a developer-level non-permanent device identifier.
      * A developer can be an enterprise or individual developer.
      * Example: dff3cdfd-7beb-1e7d-fdf7-1dbfddd7d30c
-     * 
+     *
      * An ODID will be regenerate in the following scenarios:
      * Restore a phone to its factory settings.
      * Uninstall and reinstall all apps of one developer on one device.
-     * 
+     *
      * An ODID is generated based on the following rules:
      * For apps from the same developer, which are running on the same device, they have the same ODID.
      * For apps from different developers, which are running on the same device, each of them has its own ODID.

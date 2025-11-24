@@ -34,6 +34,9 @@
             "inner_kits": [
                 {
                     "name": "//base/startup/startup_cangjie_wrapper/ohos/device_info:ohos.device_info"
+                },
+                {
+                    "name": "//base/startup/startup_cangjie_wrapper:copy_sdk_startup_cangjie_libs"
                 }
             ],
             "test": []

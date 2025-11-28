@@ -233,21 +233,6 @@ public class DeviceInfo {
     }
 
     /**
-     * Obtains the hardware profile represented by a string.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Startup.SystemInfo"
-    ]
-    public static prop hardwareProfile: String {
-        get() {
-            // cValue is local static variable from native, no need to free.
-            let cValue = unsafe { FfiOHOSDeviceInfoGetHardwareProfile() }
-            cValue.toString()
-        }
-    }
-
-    /**
      * Obtains the device serial number represented by a string.
      */
     @!APILevel[

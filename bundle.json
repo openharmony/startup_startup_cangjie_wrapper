@@ -12,9 +12,7 @@
     "component": {
         "name": "startup_cangjie_wrapper",
         "subsystem": "startup",
-        "syscap": [
-            "SystemCapability.Startup.SystemInfo"
-        ],
+        "syscap": [],
         "features": [],
         "adapted_system_type": [
             "standard"

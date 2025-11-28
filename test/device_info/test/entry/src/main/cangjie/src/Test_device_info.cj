@@ -36,7 +36,6 @@ class Test_device_info {
         let productModel = DeviceInfo.productModel
         let softwareModel = DeviceInfo.softwareModel
         let hardwareModel = DeviceInfo.hardwareModel
-        let hardwareProfile = DeviceInfo.hardwareProfile
         let serial = DeviceInfo.serial
         let bootloaderVersion = DeviceInfo.bootloaderVersion
         let abiList = DeviceInfo.abiList
@@ -63,7 +62,6 @@ class Test_device_info {
         let distributionOSApiVersion = DeviceInfo.distributionOSApiVersion
         let distributionOSReleaseType = DeviceInfo.distributionOSReleaseType
 
-        Hilog.info(0, "device_test", "hardwareProfile: ${hardwareProfile}")
         Hilog.info(0, "device_test", "osFullName: ${osFullName}")
         Hilog.info(0, "device_test", "productModel: ${productModel}")
         Hilog.info(0, "device_test", "brand: ${brand}")

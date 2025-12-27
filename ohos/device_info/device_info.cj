@@ -195,7 +195,7 @@ public class DeviceInfo {
     /**
      * Obtains the product model alias represented by a string.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     internal static prop productModelAlias: String {
         get() {
             return ""
@@ -669,7 +669,7 @@ public class DeviceInfo {
     /**
      * Obtaining the hard drive serial number.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     internal static prop diskSN: String {
         get() {
             return ""
@@ -679,7 +679,7 @@ public class DeviceInfo {
     /**
      * Obtaining the performance class.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     internal static prop performanceClass: PerformanceClassLevel {
         get() {
             return PerformanceClassLevel.ClassLevelHigh
@@ -689,7 +689,7 @@ public class DeviceInfo {
     /**
      * Obtains the device CPU chipType by a string.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     internal static prop chipType: String {
         get() {
             return ""
@@ -700,7 +700,7 @@ public class DeviceInfo {
      * Obtains the deviceboot count by a number
      * if get failed, it will return -1
      */
-    @!Hide
+    @!Hide[isChecked: true]
     internal static prop bootCount: Int32 {
         get() {
             -1
@@ -711,24 +711,24 @@ public class DeviceInfo {
 /**
  * Performance Class level of a device.
  */
-@!Hide
+@!Hide[isChecked: true]
 internal enum PerformanceClassLevel {
     /**
      * Device Capability Level is high.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     ClassLevelHigh
     |
     /**
      * Device Capability Level is medium.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     ClassLevelMedium
     |
     /**
      * Device Capability Level is low.
      */
-    @!Hide
+    @!Hide[isChecked: true]
     ClassLevelLow
     | ...
 }

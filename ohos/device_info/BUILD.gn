@@ -18,7 +18,12 @@ import("//build/ohos.gni")
 import("//build/templates/cangjie/cjc.gni")
 
 ohos_cangjie_shared_library("ohos.device_info") {
-  sources = [ "device_info.cj" ]
+
+  if (is_mingw || is_mac){
+    sources = [ "../../mock/ohos.device_info.cj" ]
+  } else {
+    sources = [ "device_info.cj" ]
+  }
 
   external_deps = [ "init:cj_device_info_ffi" ]
 

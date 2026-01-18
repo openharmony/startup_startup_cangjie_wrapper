@@ -19,9 +19,7 @@
     "type": "entry",
     "description": "$string:module_desc",
     "mainElement": "EntryAbility",
-    "deviceTypes": [
-      "phone"
-    ],
+    "deviceTypes": ["default"],
     "requestPermissions": [
       {
         "name": "ohos.permission.sec.ACCESS_UDID"

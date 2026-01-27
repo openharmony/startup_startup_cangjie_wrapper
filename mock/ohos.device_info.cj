@@ -17,9 +17,15 @@ package ohos.device_info
 
 import ohos.labels.APILevel
 
-@!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.Startup.SystemInfo"
+]
 public class DeviceInfo {
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop deviceType: String {
         
         get() {
@@ -27,7 +33,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop osFullName: String {
         
         get() {
@@ -35,7 +44,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop productModel: String {
         
         get() {
@@ -43,7 +55,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop brand: String {
         
         get() {
@@ -51,7 +66,11 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", permission: "ohos.permission.sec.ACCESS_UDID", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        permission: "ohos.permission.sec.ACCESS_UDID",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop udid: String {
         
         get() {
@@ -59,7 +78,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop buildRootHash: String {
         
         get() {
@@ -67,7 +89,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop buildTime: String {
         
         get() {
@@ -75,7 +100,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop buildHost: String {
         
         get() {
@@ -83,7 +111,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop buildUser: String {
         
         get() {
@@ -91,7 +122,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop buildType: String {
         
         get() {
@@ -99,7 +133,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop versionId: String {
         
         get() {
@@ -107,7 +144,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop firstApiVersion: Int32 {
         
         get() {
@@ -115,7 +155,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop sdkApiVersion: Int32 {
         
         get() {
@@ -123,7 +166,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop buildVersion: Int32 {
         
         get() {
@@ -131,7 +177,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop featureVersion: Int32 {
         
         get() {
@@ -139,7 +188,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop seniorVersion: Int32 {
         
         get() {
@@ -147,7 +199,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop majorVersion: Int32 {
         
         get() {
@@ -155,7 +210,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop displayVersion: String {
         
         get() {
@@ -163,7 +221,11 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", permission: "ohos.permission.sec.ACCESS_UDID", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        permission: "ohos.permission.sec.ACCESS_UDID",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop serial: String {
         
         get() {
@@ -171,7 +233,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop osReleaseType: String {
         
         get() {
@@ -179,7 +244,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop incrementalVersion: String {
         
         get() {
@@ -187,7 +255,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop securityPatchTag: String {
         
         get() {
@@ -195,7 +266,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop abiList: String {
         
         get() {
@@ -203,7 +277,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop bootloaderVersion: String {
         
         get() {
@@ -211,7 +288,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop hardwareModel: String {
         
         get() {
@@ -219,7 +299,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop softwareModel: String {
         
         get() {
@@ -227,7 +310,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop productSeries: String {
         
         get() {
@@ -235,7 +321,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop marketName: String {
         
         get() {
@@ -243,7 +332,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop manufacture: String {
         
         get() {
@@ -251,7 +343,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop distributionOSName: String {
         
         get() {
@@ -259,7 +354,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop distributionOSVersion: String {
         
         get() {
@@ -267,7 +365,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop distributionOSApiVersion: Int32 {
         
         get() {
@@ -275,7 +376,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop distributionOSReleaseType: String {
         
         get() {
@@ -283,7 +387,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop ODID: String {
         
         get() {
@@ -291,7 +398,10 @@ public class DeviceInfo {
         }
     }
 
-    @!APILevel[since: "22", syscap: "SystemCapability.Startup.SystemInfo"]
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
     public static prop distributionOSApiName: String {
         
         get() {

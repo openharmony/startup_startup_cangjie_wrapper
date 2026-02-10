@@ -409,7 +409,7 @@ public class DeviceInfo {
         }
     }
     
-    public init() {
+    init() {
         super()
     }
 }

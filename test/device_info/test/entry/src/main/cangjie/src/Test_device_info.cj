@@ -101,7 +101,6 @@ class Test_device_info {
     @TestCase
     @Tag[APILevel22, TestLevel0]
     func test_deviceInfo_01(): Unit {
-        let deviceInfo = DeviceInfo()
         let oDID = DeviceInfo.ODID
         let ddistributionOSApiName = DeviceInfo.distributionOSApiName
 

@@ -101,6 +101,7 @@ foreign {
     syscap: "SystemCapability.Startup.SystemInfo"
 ]
 public class DeviceInfo {
+    init() {}
     /**
       * Obtains the device type represented by a string, which can be phone (or default for phones), wearable,
       * liteWearable, tablet, tv, car, or smartVision.

@@ -107,4 +107,38 @@ class Test_device_info {
         Hilog.info(0, "device_test", "ODID: ${oDID}")
         Hilog.info(0, "device_test", "distributionOSApiName: ${ddistributionOSApiName}")
     }
+
+    @TestCase
+    @Tag[APILevel26, TestLevel0]
+    func test_deviceInfo_02(): Unit {
+        let sdkMinorApiVersion = DeviceInfo.sdkMinorApiVersion
+        let sdkPatchApiVersion = DeviceInfo.sdkPatchApiVersion
+
+        Hilog.info(0, "device_test", "sdkMinorApiVersion: ${sdkMinorApiVersion}")
+        Hilog.info(0, "device_test", "sdkPatchApiVersion: ${sdkPatchApiVersion}")
+    }
+
+    @TestCase
+    @Tag[APILevel26, TestLevel0]
+    func test_deviceInfo_03(): Unit {
+        var res = apiAvailable(0)
+        @Expect(res, false)
+        res = apiAvailable(1)
+        @Expect(res, true)
+        res = apiAvailable(99)
+        @Expect(res, true)
+        res = apiAvailable(100)
+        @Expect(res, false)
+
+        res = apiAvailable("5.0.1")
+        @Expect(res, true)
+        res = apiAvailable("")
+        @Expect(res, false)
+        res = apiAvailable("abc")
+        @Expect(res, false)
+        res = apiAvailable("20")
+        @Expect(res, false)
+        res = apiAvailable("20.0")
+        @Expect(res, false)
+    }
 }

@@ -56,6 +56,10 @@ foreign {
 
     func FfiOHOSDeviceInfoMajorVersion(): Int64
 
+    func FfiOHOSDeviceInfoSdkMinorApiVersion(): Int64
+
+    func FfiOHOSDeviceInfoSdkPatchApiVersion(): Int64
+
     func FfiOHOSDeviceInfoDisplayVersion(): CString
 
     func FfiOHOSDeviceInfoSerial(): CString
@@ -91,6 +95,10 @@ foreign {
     func FfiOHOSDeviceInfoDevOdid(): CString
 
     func FfiOHOSDeviceInfoDistributionOSApiName(): CString
+
+    func FfiOHOSDeviceInfoApiAvailableByInt(majorVersion: Int32): Bool
+
+    func FfiOHOSDeviceInfoApiAvailableByStr(version: CString): Bool
 }
 
 /**
@@ -432,6 +440,35 @@ public class DeviceInfo {
     }
 
     /**
+     * Obtains the SDK Minor API version.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
+    public static prop sdkMinorApiVersion: Int32 {
+        get() {
+            let ret = unsafe { FfiOHOSDeviceInfoSdkMinorApiVersion() }
+            Int32(ret)
+        }
+    }
+
+    /**
+     * Obtains the SDK Patch API version.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
+    public static prop sdkPatchApiVersion: Int32 {
+        get() {
+            let ret = unsafe { FfiOHOSDeviceInfoSdkPatchApiVersion() }
+            Int32(ret)
+        }
+    }
+
+
+    /**
      * Obtains the first API version number.
      */
     @!APILevel[
@@ -732,4 +769,51 @@ internal enum PerformanceClassLevel {
     @!Hide[isChecked: true]
     ClassLevelLow
     | ...
+}
+
+/**
+ * Checks whether the specified API version is available on the current device.
+ *
+ * This function provides compatibility checking across different OpenHarmony/Distribution
+ * OS versions. It automatically selects the appropriate version checking
+ * method based on the input format and API version range.
+ *
+ * @param { Int32 } version - The API version to check. Accepts multiple formats:
+ *     - Number format (e.g., 13): Represents OpenHarmony SDK API version (API 26- only)
+ * @returns { Bool } Returns `true` if the specified API version is available on the
+ *     current device, `false` otherwise.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.Startup.SystemInfo"
+]
+public func apiAvailable(version: Int32): Bool {
+    return unsafe { FfiOHOSDeviceInfoApiAvailableByInt(version) }
+}
+
+/**
+ * Checks whether the specified API version is available on the current device.
+ *
+ * This function provides compatibility checking across different OpenHarmony/Distribution
+ * OS versions. It automatically selects the appropriate version checking
+ * method based on the input format and API version range.
+ *
+ * @param { String } version - The API version to check. Accepts multiple formats:
+ *     - String format with dots (e.g., "26.0.0", "5.0.1"):
+ *     - For API 26+ (version >= 26.0.0): Represents both OpenHarmony and Distribution OS API versions
+ *     - For API 26- (version < 26.0.0): Represents Distribution OS API version
+ * @returns { Bool } Returns `true` if the specified API version is available on the
+ *     current device, `false` otherwise.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.Startup.SystemInfo"
+]
+public func apiAvailable(version: String): Bool {
+    unsafe {
+        let cVersion = LibC.mallocCString(version)
+        let res = FfiOHOSDeviceInfoApiAvailableByStr(cVersion)
+        LibC.free(cVersion)
+        return res
+    }
 }

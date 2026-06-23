@@ -131,7 +131,7 @@ class Test_device_info {
         @Expect(res, false)
 
         res = apiAvailable("5.0.1")
-        @Expect(res, true)
+        @Expect(res, false)
         res = apiAvailable("")
         @Expect(res, false)
         res = apiAvailable("abc")

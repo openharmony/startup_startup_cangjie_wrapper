@@ -126,7 +126,7 @@ class Test_device_info {
         res = apiAvailable(1)
         @Expect(res, true)
         res = apiAvailable(99)
-        @Expect(res, true)
+        @Expect(res, false)
         res = apiAvailable(100)
         @Expect(res, false)
 
